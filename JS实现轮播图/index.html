@@ -1,0 +1,36 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+ <head>
+  <title>jquery sliders-download by http://sc.xueit.com</title>
+  <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+ </head>
+ <body>
+ 
+<!--开始-->
+<div class="wrap">
+   <div id="slide-holder">
+		<div id="slide-runner">
+			<a href="/"><img id="slide-img-1" src="images/a1.jpg" class="slide" alt="" /></a>
+			<a href="/"><img id="slide-img-2" src="images/a2.jpg" class="slide" alt="" /></a> 
+			<div id="slide-controls">
+			 <p id="slide-client" class="text">
+			 <strong>加粗标题: </strong><span></span>
+			 </p>
+			 <p id="slide-desc" class="text"></p>
+			 <p id="slide-nav"></p>
+			</div>
+		</div>
+   </div>
+   <script type="text/javascript">
+    if(!window.slider) 
+    	var slider={};
+    	slider.data=[{"id":"slide-img-1","client":"标题在这里","desc":"这里是描述信息"},{"id":"slide-img-2","client":"标题在这里","desc":"这里是描述信息"}];
+   </script>
+</div>
+<!--结束-->
+ </body>
+</html>
