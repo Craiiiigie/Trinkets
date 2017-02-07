@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ToDoList</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="jquery-2.1.1/jquery-ui.css">
+    <script src="jquery-2.1.1/jquery.js"></script>
+    <script src="jquery-2.1.1/jquery-ui.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="task-list" id="pending">
+        <h3>待处理</h3>
+        <div class="todo-task" id="task-001">
+            <div class="remove">X</div>
+            <div class="task-header">题目</div>
+            <div class="task-date">11/01/2014</div>
+            <div class="task-description">内容</div>
+        </div>
+    </div>
+
+    <div class="task-list" id="inProgress">
+        <h3>进行中</h3>
+    </div>
+
+    <div class="task-list" id="completed">
+        <h3>已完成</h3>
+    </div>
+
+    <div class="task-list">
+        <h3>添加项目</h3>
+        <form id="todo-form">
+            <input type="text" class="addTitle" placeholder="标题">
+            <textarea class="addDescriptions" placeholder="内容"></textarea>
+            <input type="text" class="addDate" id="datepicker" placeholder="截止日期 月/日/年">
+            <input type="button" id="addItem" class="btn btn-primary" value="添加项目">
+        </form>
+
+        <input type="button" class="btn btn-primary" value="清空所有项目">
+
+        <div id="delete-div" class="hidden">拖动到这里删除</div>
+
+    </div>
+</body>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        console.log('This is a to do list');
+        var myTodoList = new MyTodoList();
+        myTodoList.generateElement({
+            id: "123",
+            code: "3",
+            title: "Back",
+            date: "12/2/2017",
+            description: "nothing"
+        });
+    });
+</script>
+
+</html>
